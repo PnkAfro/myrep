@@ -1,0 +1,134 @@
+body {
+  background: rgba(230, 230, 250);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.mainContainer {
+  background: white;
+  width: 420px;
+  height: 400px;
+  margin-top: 80px;
+  padding: 20px;
+  
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  transition: all 0.5s;
+  color: black;
+  position: sticky;
+  
+}
+
+.mainContainer:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.mainContainer:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+
+p {
+  position: absolute;
+  left: 30px;
+  top: 130px;
+  
+  
+}
+
+.form {
+  
+  top: 140px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.title {
+    text-align: center;
+    padding-top: 30px;
+    margin: 0px;  
+}
+
+.inputField {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-top: 4%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+
+
+.inputField label {
+   
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: black;
+  border-bottom: 1px solid black;
+
+}
+
+.inputField span{
+
+    color: black;
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    font-size: small;
+}
+
+.button {
+    position: relative;
+    margin-left: 28%;
+    width: 135px;
+    height: 35px;
+    left: 30px;
+    border-radius: 50px;
+ border: 1px;
+ 
+ background-color: rgb(230, 230, 250);
+ box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ font-size: 15px;
+ transition: all .5s ease;
+    
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+ }
+ 
+ button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+ }
+

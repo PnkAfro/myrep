@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <h1 class="title">Occurrences Counter</h1>
+        </header>
+        <p>Please enter a letter and a text in the fields below: </p>
+
+        <form action="/submit" method="post" id="form" class="form">
+            <div class="inputField">
+            <input type="text" name="charInput" id="userInputChar" autocomplete="off" class="userInputChar" />
+            <label for="charInput" class="charInputLabel">
+                <span class="labelContent">Letter</span>
+            </label>
+        </div>
+        <br><br>
+            <div class="inputField">
+            <input class="userInputText" type="text" name="textInput" id="userInputText" 
+                autocomplete="off" />
+                <label for="textInput"> 
+                    <span class="labelContent">Text</span>
+                </label>
+            </div>
+
+            <br><br>
+            
+            <button type="submit" class="button" id="btn">submit</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

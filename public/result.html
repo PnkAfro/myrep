@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result Page</title>
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <h1>Result Page</h1>
+
+    <script>
+      // Get the query parameters from the URL
+      const urlParams = new URLSearchParams(window.location.search);
+
+      
+      const charInputValue = urlParams.get('charInput');
+      const textInputValue = urlParams.get('textInput');
+      const count = urlParams.get('count');
+
+      // Display the values on the page
+      const charInputParagraph = document.createElement('p');
+      charInputParagraph.textContent = `Character Input: ${charInputValue}`;
+      document.body.appendChild(charInputParagraph);
+
+
+      const textInputParagraph = document.createElement('h1');
+      textInputParagraph.textContent = `Text Input: ${textInputValue}`;
+      document.body.appendChild(textInputParagraph)
+
+      countElement = document.createElement('h1');
+      countElement.textContent = count
+      document.body.appendChild(countElement)
+      
+    </script>
+  </body>
+</html>
